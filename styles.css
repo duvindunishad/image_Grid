@@ -56,3 +56,29 @@ body {
   .mySlides img {
     width: 100%;
   }
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 0; /* Remove previous padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    color: white;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ed0d0d;
+    text-decoration: none;
+    cursor: pointer;
+    border-color: #ed0d0d;
+  }
+  
