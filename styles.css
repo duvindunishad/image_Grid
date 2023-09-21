@@ -104,4 +104,42 @@ body {
   .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+  .text {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .mySlides:hover .text {
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .text-animation {
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  /* ... Rest of the CSS code ... */
+  /* ... Previous CSS code ... */
+.description {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .mySlides:hover .description {
+    opacity: 1;
+  }
   
